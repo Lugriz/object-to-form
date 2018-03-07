@@ -16,6 +16,6 @@
     "object-to-formdata",
     "object-to-form"
   ],
-  "author": "insomniocode <insomniocode@gmail.com>",
+  "author": "insomniocode <insomniocode@gmail.com> (https://github.com/Lugriz/object-to-form)",
   "license": "MIT"
 }

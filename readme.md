@@ -32,6 +32,10 @@ Convert an object
     let formData = objectToForm(obj);
 ```
 
+## Issues
+
+> https://github.com/Lugriz/object-to-form
+
 
 
 
