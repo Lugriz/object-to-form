@@ -1,4 +1,4 @@
-# Object to form, updated by p4scu41
+# Object to form
 
 Convert an object to formdata
 
