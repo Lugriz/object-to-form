@@ -1,0 +1,21 @@
+{
+  "name": "object-to-form",
+  "version": "1.0.3",
+  "description": "Convert a object to formdata.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "objecttoformdata",
+    "formdata",
+    "object",
+    "json",
+    "javascript",
+    "form",
+    "object-to-formdata",
+    "object-to-form"
+  ],
+  "author": "insomniocode <insomniocode@gmail.com>",
+  "license": "MIT"
+}
