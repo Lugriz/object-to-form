@@ -1,6 +1,6 @@
 {
   "name": "object-to-form",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Convert a object to formdata.",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,15 @@
     "object-to-formdata",
     "object-to-form"
   ],
-  "author": "insomniocode <insomniocode@gmail.com> (https://github.com/Lugriz/object-to-form)",
+  "author": "insomniocode <insomniocode@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lugriz/object-to-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lugriz/object-to-form/issues",
+    "email": "insomniocode@gmail.com"
+  },
+  "homepage": "https://github.com/Lugriz/object-to-form",
   "license": "MIT"
 }
