@@ -4,16 +4,17 @@ function objectToForm(obj, form, level) {
     let f = form || new FormData();
 
     for (let k in obj) {
+        if (obj.hasOwnProperty(k)) {
+            let levelProp = level ? level + '[' + k + ']' : k;
 
-        let levelProp = level ? level + '[' + k + ']' : k;
+            if (typeof obj[k] === 'object' && obj[k] != null && !(obj[k] instanceof File)) {
 
-        if (typeof obj[k] === 'object' && !(obj[k] instanceof File)) {
+                objectToForm(obj[k], f, levelProp);
+                continue;
+            }
 
-            objectToForm(obj[k], f, levelProp);
-            continue;
+            f.set( levelProp, obj[k] );
         }
-
-        f.set( levelProp, obj[k] );
     }
 
     return f;
