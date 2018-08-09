@@ -1,23 +1,17 @@
-'use strict'
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function objectToForm(obj, form, level) {
-    let f = form || new FormData();
-
-    for (let k in obj) {
+    var f = form || new FormData();
+    for (var k in obj) {
         if (obj.hasOwnProperty(k)) {
-            let levelProp = level ? level + '[' + k + ']' : k;
-
+            var levelProp = level ? level + '[' + k + ']' : k;
             if (typeof obj[k] === 'object' && obj[k] != null && !(obj[k] instanceof File)) {
-
                 objectToForm(obj[k], f, levelProp);
                 continue;
             }
-
-            f.set( levelProp, obj[k] );
+            f.set(levelProp, obj[k]);
         }
     }
-
     return f;
-};
-
-module.exports = { objectToForm };
+}
+exports.objectToForm = objectToForm;
