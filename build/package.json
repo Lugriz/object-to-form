@@ -1,6 +1,6 @@
 {
   "name": "object-to-form",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Convert an object to formdata.",
   "main": "index.js",
   "scripts": {

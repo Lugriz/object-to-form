@@ -5,7 +5,15 @@ function objectToForm(obj, form, level) {
     for (var k in obj) {
         if (obj.hasOwnProperty(k)) {
             var levelProp = level ? level + '[' + k + ']' : k;
-            if (typeof obj[k] === 'object' && obj[k] != null && !(obj[k] instanceof File)) {
+            if (obj[k] instanceof Date) {
+                f.set(levelProp, obj[k].toISOString());
+                continue;
+            }
+            else if (obj[k] === null || obj[k] === undefined) {
+                f.set(levelProp, '');
+                continue;
+            }
+            else if (typeof obj[k] === 'object' && !(obj[k] instanceof File) && !(obj[k] instanceof Blob)) {
                 objectToForm(obj[k], f, levelProp);
                 continue;
             }
